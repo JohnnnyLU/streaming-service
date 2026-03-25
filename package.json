@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:styles:check": "stylelint \"src/**/*.{css,scss}\"",
+    "lint:styles": "stylelint \"src/**/*.{css,scss}\" --fix"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
