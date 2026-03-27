@@ -1,1 +1,8 @@
 @use "./normalize";
+@use "./variables";
+@use "./fonts";
+
+body {
+  background-color: var(--color-black-08);
+  font-family: "Manrope", sans-serif;
+}
