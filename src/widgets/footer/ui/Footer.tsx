@@ -9,7 +9,7 @@ import {footerSocialSection} from "../lib/footerSocialSections.ts";
 
 export function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <Container>
         <div className={styles.inner}>
           <div className={styles.sections}>

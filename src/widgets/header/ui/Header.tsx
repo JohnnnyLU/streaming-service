@@ -6,6 +6,7 @@ import {Container} from "../../../shared/ui/container/Container.tsx";
 import SearchIcon from "../../../shared/assets/icons/search-icon.svg?react"
 import BellIcon from "../../../shared/assets/icons/bell-icon.svg?react"
 import clsx from "clsx";
+import {headerNavItems} from "../lib/header.data";
 
 export function Header() {
 
@@ -16,7 +17,7 @@ export function Header() {
   }
 
   return (
-    <header>
+    <header className={styles.header}>
       <Container>
         <div className={styles.inner}>
           <Link to={routes.home}>
@@ -29,12 +30,13 @@ export function Header() {
             />
           </Link>
 
-          <nav className={styles.navBar}>
-            <ul className={styles.list}>
-              <li className={styles.item}><NavLink className={navLinkClass} to={routes.home} end>Home</NavLink></li>
-              <li className={styles.item}><NavLink className={navLinkClass} to={routes.moviesShows} end>Movies & Shows</NavLink></li>
-              <li className={styles.item}><NavLink className={navLinkClass} to={routes.support} end>Support</NavLink></li>
-              <li className={styles.item}><NavLink className={navLinkClass} to={routes.subscriptions} end>Subscriptions</NavLink></li>
+          <nav className={styles.nav}>
+            <ul className={styles.navList}>
+              {headerNavItems.map(item => (
+                <li key={item.to} className={styles.item}>
+                  <NavLink className={navLinkClass} to={item.to} end={item.end}>{item.label}</NavLink>
+                </li>
+              ))}
             </ul>
           </nav>
 
