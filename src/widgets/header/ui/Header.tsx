@@ -3,8 +3,8 @@ import {routes} from "../../../shared/constants/routes.ts";
 import logoDesktop from "../../../shared/assets/images/logo-desktop.png"
 import styles from "./Header.module.scss"
 import {Container} from "../../../shared/ui/container/Container.tsx";
-import {BellIcon} from "../../../shared/ui/icon/BellIcon/BellIcon.tsx";
-import {SearchIcon} from "../../../shared/ui/icon/SearchIcon/SearchIcon.tsx";
+import SearchIcon from "../../../shared/assets/icons/search-icon.svg?react"
+import BellIcon from "../../../shared/assets/icons/bell-icon.svg?react"
 import clsx from "clsx";
 
 export function Header() {
@@ -39,8 +39,8 @@ export function Header() {
           </nav>
 
           <div className={styles.icons}>
-            <SearchIcon />
-            <BellIcon />
+            <SearchIcon className={styles.icon}/>
+            <BellIcon className={styles.icon}/>
           </div>
         </div>
       </Container>
