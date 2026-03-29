@@ -1,0 +1,123 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-bottom: 30px;
+
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+
+      .sectionTitle {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .listItem {
+
+          .link {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--color-grey-60);
+            transition: color 0.2s;
+
+            &:hover {
+              color: var(--color-black-30);
+            }
+          }
+        }
+      }
+
+      .socialList {
+        display: flex;
+        gap: 14px;
+
+        .socialItem {
+
+          .socialLink {
+            width: 56px;
+            height: 56px;
+            padding: 16px;
+            border: 1px solid var(--black-15);
+            border-radius: var(--border-radius-8);
+            background-color: var(--color-black-10);
+
+            &:hover {
+              background-color: var(--color-black-30);
+            }
+
+            .socialIcon {
+              color: var(--color-white);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-black-15);
+
+    .copyright {
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--color-grey-60);
+    }
+
+    .bottomList {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .bottomItem {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child)::after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 27px;
+          margin-left: 20px;
+          background-color: var(--color-black-15);
+        }
+
+        .bottomLink {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 18px;
+          color: var(--color-grey-60);
+          transition: color 0.2s;
+
+          &:hover {
+            color: var(--color-black-30);
+          }
+        }
+      }
+    }
+  }
+}
+
+.listItem,
+.socialItem,
+.bottomItem {
+  list-style: none;
+}
