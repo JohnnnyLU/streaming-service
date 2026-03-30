@@ -18,7 +18,7 @@ export function App() {
         <Route path={routes.moviesShows} element={<MoviesShowsPage />} />
         <Route path={routes.support} element={<SupportPage />} />
         <Route path={routes.subscriptions} element={<SubscriptionsPage />} />
-        <Route path={routes.movieDetails} element={<MovieDetailsPage />}/>
+        <Route path={routes.movieDetails} element={<MovieDetailsPage />} />
         <Route path={routes.showDetails} element={<ShowDetailsPage />} />
       </Route>
     </Routes>
