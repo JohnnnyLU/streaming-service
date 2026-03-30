@@ -36,6 +36,7 @@ export function Footer() {
                       className={styles.socialLink}
                       href={socialLink.href}
                       target="_blank"
+                      rel="noreferrer"
                       aria-label={socialLink.name}
                     >
                       <socialLink.icon className={styles.socialIcon}/>
@@ -52,7 +53,7 @@ export function Footer() {
             <ul className={styles.bottomList}>
               {footerBottomLinks.map(link => (
                 <li key={link.href} className={styles.bottomItem}>
-                  <a href="" className={styles.bottomLink}>{link.label}</a>
+                  <a href={link.href} className={styles.bottomLink}>{link.label}</a>
                 </li>
               ))}
             </ul>
