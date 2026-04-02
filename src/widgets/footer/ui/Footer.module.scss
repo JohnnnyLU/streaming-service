@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 
   .inner {
     display: flex;
@@ -16,12 +16,10 @@
         flex-direction: column;
         gap: 24px;
 
-
         .sectionTitle {
           font-size: 20px;
           font-weight: 600;
         }
-
 
         .list {
           display: flex;
@@ -117,6 +115,7 @@
       }
     }
   }
+
 
   .listItem,
   .socialItem,
