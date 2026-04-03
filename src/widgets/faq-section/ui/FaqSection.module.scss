@@ -1,0 +1,44 @@
+.faq {
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        max-width: 900px;
+
+        .title {
+          font-weight: 700;
+          font-size: 38px;
+          color: var(--color-white);
+        }
+
+        .subtext {
+          font-weight: 400;
+          font-size: 18px;
+          color: var(--color-grey-60);
+        }
+      }
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

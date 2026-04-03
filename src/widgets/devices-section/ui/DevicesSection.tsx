@@ -4,7 +4,7 @@ import {devices} from "../lib/devices.data";
 
 export function DevicesSection () {
   return (
-    <section>
+    <section className={styles.devices}>
       <Container>
         <div className={styles.inner}>
           <div className={styles.header}>
