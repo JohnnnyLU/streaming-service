@@ -1,15 +1,19 @@
 import {Header} from "../../widgets/header";
 import {Footer} from "../../widgets/footer";
-import {Outlet} from "react-router-dom";
 import styles from "./MainLayout.module.scss";
+import type {ReactNode} from "react";
 
-export function MainLayout () {
+type MainLayoutProps = {
+  children: ReactNode;
+};
+
+export function MainLayout ({children}: MainLayoutProps) {
   return (
     <div className={styles.layout}>
       <Header />
 
       <main className={styles.main}>
-        <Outlet />
+        {children}
       </main>
 
       <Footer />

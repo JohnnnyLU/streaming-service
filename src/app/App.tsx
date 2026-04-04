@@ -10,17 +10,16 @@ import {MainLayout} from "./layouts/MainLayout.tsx";
 
 export function App() {
   return (
-    <Routes>
-      <Route path={routes.root} element={<MainLayout />}>
-        <Route index element={<Navigate to={routes.home} replace />} />
-
+    <MainLayout>
+      <Routes>
+        <Route path={routes.root} element={<Navigate to={routes.home} replace />} />
         <Route path={routes.home} element={<HomePage />} />
         <Route path={routes.moviesShows} element={<MoviesShowsPage />} />
         <Route path={routes.support} element={<SupportPage />} />
         <Route path={routes.subscriptions} element={<SubscriptionsPage />} />
         <Route path={routes.movieDetails} element={<MovieDetailsPage />} />
         <Route path={routes.showDetails} element={<ShowDetailsPage />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </MainLayout>
   )
 }
