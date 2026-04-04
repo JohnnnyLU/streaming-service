@@ -1,6 +1,6 @@
-import type {FaqItem} from "./faq.types";
+import type {FaqItemType} from "./faq.types";
 
-export const faqData: FaqItem[] = [
+export const faqData: FaqItemType[] = [
   {
     id: "01",
     question: "What is StreamVibe?",

@@ -1,9 +1,15 @@
-import {useState} from "react";
-import {Container} from "../../../shared/ui/container/Container";
-import {Button} from "../../../shared/ui/button/Button";
-import {faqData} from "../../../entities/faq/model/faq.data";
-import {FaqCard} from "../../../entities/faq/ui/FaqCard/FaqCard";
+import { useState } from "react";
+import { Container } from "../../../shared/ui/container/Container";
+import { Button } from "../../../shared/ui/button/Button";
+import { faqData } from "../model/faq.data";
+import { FaqItem } from "./FaqItem/FaqItem";
 import styles from "./FaqSection.module.scss";
+import {routes} from "../../../shared/constants/routes";
+
+const ButtonData = {
+  children: "Ask a Question",
+  to: routes.support
+}
 
 export function FaqSection() {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -29,13 +35,13 @@ export function FaqSection() {
               </p>
             </div>
 
-            <Button>Ask a Question</Button>
+            <Button children={ButtonData.children} to={ButtonData.to}/>
           </div>
 
           <div className={styles.content}>
             <div className={styles.column}>
               {leftColumn.map((item) => (
-                <FaqCard
+                <FaqItem
                   key={item.id}
                   item={item}
                   isOpen={openId === item.id}
@@ -46,7 +52,7 @@ export function FaqSection() {
 
             <div className={styles.column}>
               {rightColumn.map((item) => (
-                <FaqCard
+                <FaqItem
                   key={item.id}
                   item={item}
                   isOpen={openId === item.id}
