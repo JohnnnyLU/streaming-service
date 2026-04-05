@@ -3,7 +3,7 @@ import styles from "./PricingSection.module.scss";
 
 export function PricingSection () {
   return (
-    <section>
+    <section className={styles.pricing}>
       <Container>
         <div className={styles.inner}>
           <div>
