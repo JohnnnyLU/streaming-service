@@ -6,7 +6,7 @@ import clsx from "clsx";
 type ButtonProps = {
   children: string;
   icon?: ComponentType<SVGProps<SVGSVGElement>>;
-  variant?: 'primary' | 'secondary' | 'link';
+  variant?: 'primary' | 'secondary';
   to?: string;
 }
 
@@ -23,15 +23,6 @@ export function Button({children, icon: Icon, variant = 'primary', to}: ButtonPr
         {children}
       </Link>
     );
-  }
-
-  if (variant === 'secondary') {
-    return (
-      <button className={className} type="button">
-        {Icon && <Icon />}
-        {children}
-      </button>
-    )
   }
 
   return (
