@@ -1,5 +1,6 @@
 import {Button} from "../../../shared/ui/button/Button";
 import type {BillingPeriod, Plan} from "../model/plan.types.ts";
+import styles from "./PlanCard.module.scss";
 
 type Props = {
   plan: Plan;
@@ -11,19 +12,19 @@ export function PlanCard({plan, billingPeriod}: Props) {
   const suffix = billingPeriod === 'monthly' ? '/month' : '/year';
 
   return (
-    <div>
-      <h3>{plan.title}</h3>
+    <div className={styles.card}>
+      <h3 className={styles.title}>{plan.title}</h3>
 
-      <p>{plan.description}</p>
+      <p className={styles.description}>{plan.description}</p>
 
-      <div>
-        <span>${price}</span>
-        <span>{suffix}</span>
+      <div className={styles.pricing}>
+        <span className={styles.price}>${price}</span>
+        <span className={styles.suffix}>{suffix}</span>
       </div>
 
-      <div>
-        <Button children={plan.trialLabel} />
-        <Button children={plan.actionLabel} />
+      <div className={styles.buttons}>
+        <Button children={plan.trialLabel} variant="secondary"/>
+        <Button children={plan.actionLabel} variant="primary"/>
       </div>
     </div>
   )

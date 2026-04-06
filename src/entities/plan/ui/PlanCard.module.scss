@@ -1,0 +1,47 @@
+.card {
+  border: 1px solid var(--color-black-15);
+  border-radius: var(--border-radius-12);
+  padding: 50px;
+  width: 512px;
+  height: 425px;
+  background-color: var(--color-black-10);
+
+  .title {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    color: var(--color-grey-60);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 50px;
+  }
+
+  .pricing {
+    margin-bottom: 50px;
+
+    .price {
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 73%;
+    }
+
+    .suffix {
+      color: var(--color-grey-60);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 73%;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+}

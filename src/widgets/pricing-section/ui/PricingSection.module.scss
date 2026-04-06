@@ -1,7 +1,43 @@
 .pricing {
 
   .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
 
+      .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .title {
+          color: var(--color-white);
+          font-weight: 700;
+          font-size: 38px;
+        }
+
+        .subtext {
+          color: var(--color-grey-60);
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+
+      .toggle {
+
+      }
+    }
+
+    .pricingCards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
   }
 }
