@@ -5,10 +5,10 @@
   margin-bottom: 200px;
 
   .hero {
+    background-color: var(--color-black);
     position: relative;
     min-height: 860px;
 
-    background-color: var(--color-black);
     background-image: url("../../../shared/assets/images/hero-banner.png");
     background-size: cover;
     background-position: center;

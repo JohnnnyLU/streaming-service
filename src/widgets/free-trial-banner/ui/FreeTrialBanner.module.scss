@@ -1,0 +1,41 @@
+.trialBanner {
+
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    border: 1px solid var(--color-black-15);
+    border-radius: var(--border-radius-12);
+    padding: 80px 100px;
+    min-height: 313px;
+
+    background-image: url('../../../shared/assets/images/free-trial-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 1148px;
+
+      .title {
+        color: var(--color-white);
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 150%;
+      }
+
+      .subtext {
+        color: var(--color-grey-60);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+      }
+    }
+  }
+}
