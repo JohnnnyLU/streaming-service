@@ -14,13 +14,10 @@ export function PricingSection() {
         <div className={styles.inner}>
           <div className={styles.header}>
             <div className={styles.heading}>
-              <h2 className={styles.title}>
-                Choose the plan that's right for you
-              </h2>
+              <h2 className={styles.title}>Choose the plan that's right for you</h2>
               <p className={styles.subtext}>
-                Join StreamVibe and select from our flexible subscription
-                options tailored to suit your viewing preferences. Get ready for
-                non-stop entertainment!
+                Join StreamVibe and select from our flexible subscription options tailored to suit
+                your viewing preferences. Get ready for non-stop entertainment!
               </p>
             </div>
             <div className={styles.toggle}>
@@ -30,11 +27,7 @@ export function PricingSection() {
 
           <div className={styles.pricingCards}>
             {plans.map((plan) => (
-              <PlanCard
-                key={plan.id}
-                plan={plan}
-                billingPeriod={billingPeriod}
-              />
+              <PlanCard key={plan.id} plan={plan} billingPeriod={billingPeriod} />
             ))}
           </div>
         </div>

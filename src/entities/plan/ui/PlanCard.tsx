@@ -8,8 +8,7 @@ type Props = {
 };
 
 export function PlanCard({ plan, billingPeriod }: Props) {
-  const price =
-    billingPeriod === 'monthly' ? plan.monthlyPrice : plan.yearlyPrice;
+  const price = billingPeriod === 'monthly' ? plan.monthlyPrice : plan.yearlyPrice;
   const suffix = billingPeriod === 'monthly' ? '/month' : '/year';
 
   return (

@@ -16,8 +16,7 @@ export const faqData: FaqItemType[] = [
   {
     id: '03',
     question: 'What content is available on StreamVibe?',
-    answer:
-      'You can watch movies, TV shows, exclusive originals, and more on StreamVibe.',
+    answer: 'You can watch movies, TV shows, exclusive originals, and more on StreamVibe.',
   },
   {
     id: '04',
@@ -40,8 +39,7 @@ export const faqData: FaqItemType[] = [
   {
     id: '07',
     question: 'How do I contact StreamVibe customer support?',
-    answer:
-      'You can contact customer support through the help center, email, or live chat.',
+    answer: 'You can contact customer support through the help center, email, or live chat.',
   },
   {
     id: '08',

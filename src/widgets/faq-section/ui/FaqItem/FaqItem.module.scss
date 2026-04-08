@@ -1,7 +1,6 @@
 .item {
-
   &:not(:last-child)::after {
-    content: "";
+    content: '';
     display: block;
     height: 1px;
     background: linear-gradient(
@@ -77,5 +76,4 @@
 }
 
 .open {
-
 }

@@ -10,8 +10,8 @@ export function FreeTrialBanner() {
           <div className={styles.header}>
             <h2 className={styles.title}>Start your free trial today!</h2>
             <p className={styles.subtext}>
-              This is a clear and concise call to action that encourages users
-              to sign up for a free trial of StreamVibe.
+              This is a clear and concise call to action that encourages users to sign up for a free
+              trial of StreamVibe.
             </p>
           </div>
           <div>

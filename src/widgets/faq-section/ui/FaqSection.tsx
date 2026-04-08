@@ -30,8 +30,8 @@ export function FaqSection() {
             <div className={styles.heading}>
               <h2 className={styles.title}>Frequently Asked Questions</h2>
               <p className={styles.subtext}>
-                Got questions? We've got answers! Check out our FAQ section to
-                find answers to the most common questions about StreamVibe.
+                Got questions? We've got answers! Check out our FAQ section to find answers to the
+                most common questions about StreamVibe.
               </p>
             </div>
 

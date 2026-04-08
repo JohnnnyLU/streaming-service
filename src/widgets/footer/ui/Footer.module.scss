@@ -27,7 +27,6 @@
           gap: 14px;
 
           .listItem {
-
             .link {
               text-decoration: none;
               font-weight: 500;
@@ -47,7 +46,6 @@
           gap: 14px;
 
           .socialItem {
-
             .socialLink {
               width: 56px;
               height: 56px;
@@ -116,11 +114,9 @@
     }
   }
 
-
   .listItem,
   .socialItem,
   .bottomItem {
     list-style: none;
   }
-
 }

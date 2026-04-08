@@ -1,10 +1,6 @@
 import { Container } from '../../../shared/ui/container/Container.tsx';
 import styles from './Footer.module.scss';
-import {
-  footerBottomLinks,
-  footerCopyright,
-  footerSections,
-} from '../lib/footerSections.data.ts';
+import { footerBottomLinks, footerCopyright, footerSections } from '../lib/footerSections.data.ts';
 import { footerSocialSection } from '../lib/footerSocialSections.ts';
 
 export function Footer() {
@@ -29,9 +25,7 @@ export function Footer() {
               </div>
             ))}
             <div className={styles.section}>
-              <h4 className={styles.sectionTitle}>
-                {footerSocialSection.title}
-              </h4>
+              <h4 className={styles.sectionTitle}>{footerSocialSection.title}</h4>
 
               <ul className={styles.socialList}>
                 {footerSocialSection.items.map((socialLink) => (

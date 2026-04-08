@@ -1,6 +1,6 @@
-@use "./normalize";
-@use "./variables";
-@use "./fonts";
+@use './normalize';
+@use './variables';
+@use './fonts';
 
 #root {
   min-height: 100vh;
@@ -9,5 +9,5 @@
 body {
   color: var(--color-white);
   background-color: var(--color-black-08);
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }

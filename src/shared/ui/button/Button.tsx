@@ -10,12 +10,7 @@ type ButtonProps = {
   to?: string;
 };
 
-export function Button({
-  children,
-  icon: Icon,
-  variant = 'primary',
-  to,
-}: ButtonProps) {
+export function Button({ children, icon: Icon, variant = 'primary', to }: ButtonProps) {
   const className = clsx(styles.button, {
     [styles.primary]: variant === 'primary',
     [styles.secondary]: variant === 'secondary',

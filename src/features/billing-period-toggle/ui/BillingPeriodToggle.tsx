@@ -18,18 +18,10 @@ export function BillingPeriodToggle({ value, onChange }: Props) {
 
   return (
     <div className={styles.toggle}>
-      <button
-        className={classNameMonth}
-        onClick={() => onChange('monthly')}
-        type="button"
-      >
+      <button className={classNameMonth} onClick={() => onChange('monthly')} type="button">
         Monthly
       </button>
-      <button
-        className={classNameYear}
-        onClick={() => onChange('yearly')}
-        type="button"
-      >
+      <button className={classNameYear} onClick={() => onChange('yearly')} type="button">
         Yearly
       </button>
     </div>
