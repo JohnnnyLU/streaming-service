@@ -1,3 +1,3 @@
 export function getImageUrl() {
-  return "";
+  return '';
 }

@@ -1,3 +1,3 @@
 export function classNames() {
-  return "";
+  return '';
 }

@@ -1,4 +1,4 @@
-import type {Plan} from "./plan.types.ts";
+import type { Plan } from './plan.types.ts';
 
 export const plans: Plan[] = [
   {
@@ -31,4 +31,4 @@ export const plans: Plan[] = [
     trialLabel: 'Start Free Trial',
     actionLabel: 'Choose Plan',
   },
-]
+];

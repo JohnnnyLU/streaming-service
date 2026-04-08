@@ -1,1 +1,1 @@
-export {GenresSection} from "./ui/GenresSection";
+export { GenresSection } from './ui/GenresSection';

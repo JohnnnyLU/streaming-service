@@ -1,5 +1,3 @@
 export function ShowDetailsPage() {
-  return (
-    <h1>ShowDetailsPage</h1>
-  )
+  return <h1>ShowDetailsPage</h1>;
 }

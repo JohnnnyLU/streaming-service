@@ -1,1 +1,1 @@
-export {ShowDetailsPage} from "./ui/ShowDetailsPage.tsx"
+export { ShowDetailsPage } from './ui/ShowDetailsPage.tsx';

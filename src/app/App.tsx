@@ -1,12 +1,12 @@
-import {Routes, Route, Navigate} from "react-router-dom";
-import {HomePage} from "../pages/home";
-import {MoviesShowsPage} from "../pages/movies-shows";
-import {SupportPage} from "../pages/support";
-import {SubscriptionsPage} from "../pages/subscriptions";
-import {MovieDetailsPage} from "../pages/movie-details";
-import {ShowDetailsPage} from "../pages/show-details";
-import {routes} from "../shared/constants/routes.ts";
-import {MainLayout} from "./layouts/MainLayout.tsx";
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { HomePage } from '../pages/home';
+import { MoviesShowsPage } from '../pages/movies-shows';
+import { SupportPage } from '../pages/support';
+import { SubscriptionsPage } from '../pages/subscriptions';
+import { MovieDetailsPage } from '../pages/movie-details';
+import { ShowDetailsPage } from '../pages/show-details';
+import { routes } from '../shared/constants/routes.ts';
+import { MainLayout } from './layouts/MainLayout.tsx';
 
 export function App() {
   return (
@@ -21,5 +21,5 @@ export function App() {
         <Route path={routes.showDetails} element={<ShowDetailsPage />} />
       </Routes>
     </MainLayout>
-  )
+  );
 }

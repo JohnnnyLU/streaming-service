@@ -1,1 +1,1 @@
-export {SubscriptionsPage} from "./ui/SubscriptionsPage.tsx"
+export { SubscriptionsPage } from './ui/SubscriptionsPage.tsx';

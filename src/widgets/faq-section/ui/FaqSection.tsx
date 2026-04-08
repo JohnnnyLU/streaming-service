@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { Container } from "../../../shared/ui/container/Container";
-import { Button } from "../../../shared/ui/button/Button";
-import { faqData } from "../model/faq.data";
-import { FaqItem } from "./FaqItem/FaqItem";
-import styles from "./FaqSection.module.scss";
-import {routes} from "../../../shared/constants/routes";
+import { useState } from 'react';
+import { Container } from '../../../shared/ui/container/Container';
+import { Button } from '../../../shared/ui/button/Button';
+import { faqData } from '../model/faq.data';
+import { FaqItem } from './FaqItem/FaqItem';
+import styles from './FaqSection.module.scss';
+import { routes } from '../../../shared/constants/routes';
 
 const ButtonData = {
-  children: "Ask a Question",
-  to: routes.support
-}
+  children: 'Ask a Question',
+  to: routes.support,
+};
 
 export function FaqSection() {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -35,7 +35,7 @@ export function FaqSection() {
               </p>
             </div>
 
-            <Button children={ButtonData.children} to={ButtonData.to}/>
+            <Button children={ButtonData.children} to={ButtonData.to} />
           </div>
 
           <div className={styles.content}>

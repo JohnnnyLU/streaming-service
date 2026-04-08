@@ -1,13 +1,12 @@
 type FooterNavLink = {
   label: string;
   targetId: string;
-}
+};
 
 type FooterSection = {
   title: string;
   links: FooterNavLink[];
-}
-
+};
 
 export const footerSections: FooterSection[] = [
   {
@@ -39,9 +38,7 @@ export const footerSections: FooterSection[] = [
   },
   {
     title: 'Support',
-    links: [
-      { label: 'Contact Us', targetId: 'contact-us' },
-    ],
+    links: [{ label: 'Contact Us', targetId: 'contact-us' }],
   },
   {
     title: 'Subscription',
@@ -50,13 +47,12 @@ export const footerSections: FooterSection[] = [
       { label: 'Features', targetId: 'features' },
     ],
   },
-]
+];
 
-
-export const footerCopyright = '©2023 streamvib, All Rights Reserved'
+export const footerCopyright = '©2023 streamvib, All Rights Reserved';
 
 export const footerBottomLinks = [
   { label: 'Terms of Use', href: '/terms' },
   { label: 'Privacy Policy', href: '/privacy' },
   { label: 'Cookie Policy', href: '/cookies' },
-]
+];

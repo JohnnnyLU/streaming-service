@@ -1,1 +1,1 @@
-export {FreeTrialBanner} from "./ui/FreeTrialBanner";
+export { FreeTrialBanner } from './ui/FreeTrialBanner';

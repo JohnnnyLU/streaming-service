@@ -1,5 +1,3 @@
 export function MovieDetailsPage() {
-  return (
-    <h1>MovieDetailsPage</h1>
-  )
+  return <h1>MovieDetailsPage</h1>;
 }

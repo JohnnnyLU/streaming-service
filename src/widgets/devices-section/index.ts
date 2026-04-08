@@ -1,1 +1,1 @@
-export {DevicesSection} from "./ui/DevicesSection";
+export { DevicesSection } from './ui/DevicesSection';

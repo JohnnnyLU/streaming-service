@@ -1,14 +1,15 @@
-import {Button} from "../../../shared/ui/button/Button";
-import type {BillingPeriod, Plan} from "../model/plan.types.ts";
-import styles from "./PlanCard.module.scss";
+import { Button } from '../../../shared/ui/button/Button';
+import type { BillingPeriod, Plan } from '../model/plan.types.ts';
+import styles from './PlanCard.module.scss';
 
 type Props = {
   plan: Plan;
   billingPeriod: BillingPeriod;
-}
+};
 
-export function PlanCard({plan, billingPeriod}: Props) {
-  const price = billingPeriod === 'monthly' ? plan.monthlyPrice : plan.yearlyPrice;
+export function PlanCard({ plan, billingPeriod }: Props) {
+  const price =
+    billingPeriod === 'monthly' ? plan.monthlyPrice : plan.yearlyPrice;
   const suffix = billingPeriod === 'monthly' ? '/month' : '/year';
 
   return (
@@ -23,9 +24,9 @@ export function PlanCard({plan, billingPeriod}: Props) {
       </div>
 
       <div className={styles.buttons}>
-        <Button children={plan.trialLabel} variant="secondary"/>
-        <Button children={plan.actionLabel} variant="primary"/>
+        <Button children={plan.trialLabel} variant="secondary" />
+        <Button children={plan.actionLabel} variant="primary" />
       </div>
     </div>
-  )
+  );
 }
